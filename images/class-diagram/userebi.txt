@@ -1,0 +1,8 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+interface UserEbi {
+	+{abstract} createUser(name:String, age:int):boolean
+	+{abstract} deleteUser(name:String):boolean
+}
+@enduml

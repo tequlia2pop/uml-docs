@@ -1,0 +1,9 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+abstract class AbstractClass {
+	- name:String
+	+{abstract} abstractMethod(a:int, b:String):String
+	+ otherMethod():void
+}
+@enduml

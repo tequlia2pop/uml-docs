@@ -1,0 +1,11 @@
+@startuml
+skinparam nodesep 100
+
+class LeaningGroup as "学习兴趣小组" {
+}
+
+class Student as "学生" {
+}
+
+LeaningGroup "0..n" o- "0..n" Student
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+skinparam nodesep 100
+
+class Person as "人" {
+}
+
+class Computer as "计算机" {
+}
+
+Person "1" x-> "0..n" Computer : 拥有
+@enduml

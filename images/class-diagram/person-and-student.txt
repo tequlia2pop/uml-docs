@@ -1,0 +1,16 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Person as "人员" {
+	+ run():void
+	__Property__
+	- name:String
+}
+
+class Student as "学生" {
+	- studentId:String
+	+ study():void
+}
+
+Person <|-- Student
+@enduml

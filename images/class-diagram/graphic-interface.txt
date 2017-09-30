@@ -1,0 +1,17 @@
+@startuml
+class GraphicInterface as "图形界面" {
+}
+
+class TextFiled as "文本框" {
+}
+
+class Label {
+}
+
+class Button as "按钮" {
+}
+
+GraphicInterface *-- "0..*" TextFiled
+GraphicInterface *-- "0..*" Label
+GraphicInterface *-- "0..*" Button
+@enduml

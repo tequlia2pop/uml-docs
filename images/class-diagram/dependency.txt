@@ -1,0 +1,24 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+together {
+	interface UserEbi {
+		+{abstract} createUser(name:String, age:int):boolean
+		+{abstract} deleteUser(name:String):boolean
+	}
+
+	class UserEbo {
+		+ createUser(name:String, age:int):boolean
+		+ deleteUser(name:String):boolean
+	}
+}
+
+UserEbi <|.. UserEbo
+
+class Client {
+	+{static} main(args:String[]):void
+}
+
+Client .> UserEbi
+Client .> UserEbo
+@enduml

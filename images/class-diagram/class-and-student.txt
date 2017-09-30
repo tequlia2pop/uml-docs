@@ -1,0 +1,11 @@
+@startuml
+skinparam nodesep 100
+
+class Class as "°à¼¶" {
+}
+
+class Student as "Ñ§Éú" {
+}
+
+Class "1" o-> "0..n" Student
+@enduml

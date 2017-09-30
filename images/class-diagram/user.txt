@@ -1,0 +1,13 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class User {
+	__Attribute__
+	-age:int=20
+	-{static} name:String
+	__Operation__
+	+{static} run(speed:double, durableTime:double):void
+	__Property__
+	- nickname:String
+}
+@enduml
